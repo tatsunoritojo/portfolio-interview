@@ -588,13 +588,23 @@
             width: 100%;
             border-collapse: collapse;
             margin: 0 auto;
+            table-layout: fixed; /* Add this */
         }
 
         .app-summary-table th, .app-summary-table td {
             border: 1px solid #dee2e6;
-            padding: 12px 15px;
+            padding: 10px 12px; /* Slightly smaller padding for smaller font */
             text-align: left;
             vertical-align: top;
+            font-size: 0.9em; /* Smaller font size */
+        }
+
+        .app-summary-table th:nth-child(1), .app-summary-table td:nth-child(1) {
+            width: 25%; /* Make first column wider */
+        }
+
+        .app-summary-table th:nth-child(2), .app-summary-table td:nth-child(2) {
+            width: 15%; /* Make second column narrower */
         }
 
         .app-summary-table thead {
@@ -628,16 +638,8 @@
                 </div>
                 <div class="contact-info-header">
                     <div class="contact-item">
-                        <span>📧</span>
-                        <span>mail: tatsunoritojo@gmail.com/span>
-                    </div>
-                    <div class="contact-item">
                         <span>💻</span>
                         <span>GitHub: github.com/tatsunoritojo</span>
-                    </div>
-                    <div class="contact-item">
-                        <span>🎓</span>
-                        <span>現在: 広島大学教育学部 特別支援教育特別専攻科所属 (2026年3月修了予定)</span>
                     </div>
                 </div>
             </div>
@@ -672,6 +674,10 @@
                         <td>2025年4月～現在</td>
                         <td>広島大学特別支援教育特別専攻科</td>
                     </tr>
+                    <tr>
+                        <td>2026年3月</td>
+                        <td>修了予定</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -680,7 +686,7 @@
     <!-- アプリケーション概要セクション -->
     <section class="app-summary-section">
         <div class="container">
-            <h2>アプリケーション概要</h2>
+            <h2>紹介するアプリケーション</h2>
             <table class="app-summary-table">
                 <thead>
                     <tr>
@@ -692,7 +698,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><b>出席管理</b></td>
+                        <td><b>出席管理システム</b></td>
                         <td>個別対話型レポート塾Onedrop</td>
                         <td>2025年5月～7月22日納品～現在も運用、保守を行う</td>
                         <td>生徒の出席情報をもとに，危険な状態の子どもを検出するAIを開発・通知<br>請求書，領収書作成機能の実装<br>応答性向上など</td>
@@ -706,6 +712,7 @@
                 </tbody>
             </table>
         </div>
+    </section>
     </section>
 
     <!-- プロジェクト1: 出席管理システム -->
@@ -937,26 +944,6 @@
 
     
 
-    <!-- フッター -->
-    <footer class="footer">
-        <div class="container">
-            <h3>連絡先・リンク</h3>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span>📧</span>
-                    <span>メール連絡可能</span>
-                </div>
-                <div class="contact-item">
-                    <span>💻</span>
-                    <a href="https://github.com/tatsunoritojo" target="_blank">GitHub</a>
-                </div>
-                <div class="contact-item">
-                    <span>🌐</span>
-                    <a href="https://tatsunoritojo.github.io/portfolio/" target="_blank">詳細ポートフォリオ</a>
-                </div>
-            </div>
-            <p style="margin-top: 30px;">© 2025 東城立憲 - エンジニア転職ポートフォリオ</p>
-        </div>
     </footer>
 
     <script>
