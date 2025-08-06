@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東城立憲 - 職務経歴書</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 15mm 15mm;
+        }
+
+        /* ヘッダーセクション */
+        .hero {
+            padding: 20px 0 30px 0;
+            text-align: center;
+            background: white;
+            border-bottom: 2px solid #333;
+            margin-bottom: 30px;
+        }
+
+        .hero-content h1 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .hero-content p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .tech-item {
+            background: #f8f9fa;
+            color: #333;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            border: 1px solid #dee2e6;
+            font-size: 0.9rem;
+        }
+
+        .contact-info-header {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .contact-info-header .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* プロジェクトセクション */
+        .project-section {
+            padding: 25px 0;
+            background: white;
+            margin-bottom: 25px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+        }
+
+        .project-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .project-content {
+            display: block;
+        }
+
+        .project-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: start;
+            margin-bottom: 20px;
+        }
+
+        .project-header.reverse .project-info {
+            order: 2;
+        }
+
+        .project-header.reverse .main-image-container {
+            order: 1;
+        }
+
+        .main-image-container {
+            width: 100%;
+        }
+
+
+        .sub-images-container {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .project-image {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-image:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-placeholder {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(45deg, #e3f2fd, #bbdefb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #1976d2;
+            border: 2px dashed #1976d2;
+        }
+
+        .project-info h2 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #667eea;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .project-description {
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .impact-metrics {
+            background: #e8f5e8;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid #4caf50;
+        }
+
+        .impact-metrics h3 {
+            color: #2e7d32;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .metrics-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .metrics-list li {
+            margin: 6px 0;
+            padding-left: 15px;
+            position: relative;
+            font-size: 0.85rem;
+        }
+
+        .metrics-list li:before {
+            content: "📊";
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+        }
+
+
+        /* レスポンシブ・印刷用 */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .project-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .project-content.reverse .project-info,
+            .project-content.reverse .project-image {
+                order: unset;
+            }
+
+            .project-info h2 {
+                font-size: 1.8rem;
+            }
+
+            .tech-stack {
+                gap: 8px;
+            }
+
+            .tech-item {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+
+            .contact-info-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        /* 印刷用スタイル */
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
+            @page {
+                size: A4;
+                margin: 10mm;
+            }
+
+            body {
+                background: white !important;
+                color: black !important;
+                font-size: 9pt;
+                line-height: 1.2;
+            }
+
+            .container {
+                max-width: none;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+
+            .hero {
+                border-bottom: 1px solid black;
+                page-break-after: avoid;
+                padding: 10px 0 15px 0;
+                margin-bottom: 15px;
+            }
+
+            .project-section {
+                page-break-inside: avoid;
+                margin-bottom: 10px;
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
+
+            .project-header {
+                gap: 15px;
+            }
+
+            .image-row {
+                grid-template-columns: 200px 1fr;
+                margin-bottom: 8px;
+                page-break-inside: avoid;
+            }
+
+            .image-item img,
+            .image-placeholder {
+                width: 200px;
+                height: 112px;
+            }
+
+            .image-description {
+                padding: 6px 10px;
+                font-size: 0.7rem;
+            }
+
+            .image-description h4 {
+                font-size: 0.75rem;
+                margin-bottom: 3px;
+            }
+
+            .main-image img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16/9;
+                object-fit: contain;
+                max-height: 200px;
+            }
+
+            .main-placeholder {
+                aspect-ratio: 16/9;
+                max-height: 200px;
+            }
+
+            .tech-item {
+                background: #f5f5f5 !important;
+                border: 1px solid black !important;
+                color: black !important;
+            }
+
+            .image-placeholder, .main-placeholder {
+                background: #f9f9f9 !important;
+                border: 1px solid black !important;
+                color: black !important;
+            }
+
+            .impact-metrics {
+                background: #f0f0f0 !important;
+                border-left: 2px solid black !important;
+            }
+
+            .footer {
+                page-break-inside: avoid;
+                margin-top: 15px;
+            }
+        }
+
+        /* フッター */
+        .footer {
+            background: #f8f9fa;
+            color: #333;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #dee2e6;
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.8rem;
+        }
+
+        .contact-item a {
+            color: #495057;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* PDF用画像表示 */
+        .project-images {
+            margin-top: 30px;
+        }
+
+        .main-image {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            object-fit: contain;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+
+        .main-placeholder {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: linear-gradient(45deg, #e3f2fd, #bbdefb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: #1976d2;
+            border: 1px dashed #1976d2;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .sub-images {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .image-row {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 0;
+            align-items: start;
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        .image-item {
+            position: relative;
+        }
+
+        .image-item img {
+            width: 300px;
+            height: 169px;
+            object-fit: contain;
+            background: white;
+            image-rendering: auto;
+            image-rendering: -webkit-optimize-contrast;
+        }
+
+        .image-placeholder {
+            width: 300px;
+            height: 169px;
+            background: linear-gradient(45deg, #e3f2fd, #bbdefb);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: #1976d2;
+            text-align: center;
+            border-right: 1px solid #e9ecef;
+        }
+
+        .image-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 4px 8px;
+            font-size: 0.65rem;
+            font-weight: bold;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .image-description {
+            padding: 10px 15px;
+            font-size: 0.8rem;
+            color: #333;
+            line-height: 1.4;
+            background: #f8f9fa;
+            width: 100%;
+        }
+
+        .image-description h4 {
+            margin: 0 0 6px 0;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .image-description p {
+            margin: 0;
+            color: #6c757d;
+        }
+
+        @media (max-width: 768px) {
+            .main-image img,
+            .main-placeholder {
+                aspect-ratio: 16/9;
+                max-height: 200px;
+            }
+
+            .image-item {
+                width: 90%;
+            }
+
+            .image-item img,
+            .image-placeholder {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダーセクション -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>東城 立憲 - 職務経歴書</h1>
+                <p></p>
+                <div class="tech-stack">
+                    <div class="tech-item">Python</div>
+                    <div class="tech-item">Flask</div>
+                    <div class="tech-item">HTML</div>
+                    <div class="tech-item">JavaScript</div>
+                    <div class="tech-item">AI駆動開発</div>
+                    <div class="tech-item">業務自動化</div>
+                </div>
+                <div class="contact-info-header">
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <span>mail: tatsunoritojo@gmail.com/span>
+                    </div>
+                    <div class="contact-item">
+                        <span>💻</span>
+                        <span>GitHub: github.com/tatsunoritojo</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>🎓</span>
+                        <span>現在: 広島大学教育学部 特別支援教育特別専攻科所属 (2026年3月修了予定)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- プロジェクト1: 出席管理システム -->
+    <section class="project-section" data-project="qr_attendance">
+        <div class="container">
+            <div class="project-content">
+                <div class="project-header">
+                    <div class="main-image-container">
+                        <div class="main-image">
+                            <img src="portfolio_data/images/qr_attendance/overview_qr_attendance.png" alt="QRコード出席管理システム概要" />
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h2>QRコード出席管理システム</h2>
+                        <div class="project-tags">
+                            <div class="tag">Python</div>
+                            <div class="tag">Kivy</div>
+                            <div class="tag">Google Sheets API</div>
+                            <div class="tag">GCP</div>
+                        </div>
+                        <div class="project-description">
+                            Python/Kivyベースのデスクトップアプリとして開発。
+                            フリースクール版はExcelでのローカル管理により、インターネット環境に依存しない安定運用を実現。
+                            同様のシステムを学習塾にも導入しており、そちらではGoogle Sheets APIを活用したクラウドベースでの運用を行っています。
+                            PyInstallerで実行ファイル化し、簡単な導入・運用を可能にしました。
+                        </div>
+                        <div class="impact-metrics">
+                            <h3>🎯 解決する課題</h3>
+                            <ul class="metrics-list">
+                                <li><strong>記録ミスの完全排除</strong> - QRコード自動読み取りによる人的エラー防止</li>
+                                <li><strong>作業時間の大幅短縮</strong> - 月次レポート作成をワンクリックで完結</li>
+                                <li><strong>生徒の心理状態の可視化</strong> - 3つの質問による状態把握と記録</li>
+                                <li><strong>不規則な来校時間への対応</strong> - フリースクール特有の課題を解決</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-images-container">
+                    <div class="sub-images">
+                        <div class="image-row">
+                            <div class="image-item">
+                                <img src="portfolio_data/images/qr_attendance/waitscreen.png" alt="学生番号入力画面" />
+                                <div class="image-caption">学生番号入力画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>QRコード読み取り機能</h4>
+                                <p>こちらは生徒さんが出席を登録する際の画面になります。QRコードをスキャンするか、学生番号を直接入力していただくことで、簡単に出席登録ができるようになっています。タッチディスプレイに対応しているため、どなたでも直感的にご利用いただけます。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <img src="portfolio_data/images/qr_attendance/informations_attendance.png" alt="出席データ管理画面" />
+                                <div class="image-caption">出席データ管理画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>出席状況確認</h4>
+                                <p>この画面では、生徒さんの出席状況をリアルタイムで確認することができます。Google Sheetsとの連携により、データが即座に更新されるため、常に最新の出席情報を把握できます。また、詳細な出席履歴も一元的に管理されているので、過去のデータもすぐに確認できて便利です。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <img src="portfolio_data/images/qr_attendance/registrate_students.png" alt="生徒情報管理画面" />
+                                <div class="image-caption">生徒情報管理画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>生徒情報管理</h4>
+                                <p>新しく入学された生徒さんの情報登録や、既にご登録いただいている生徒さんの情報編集を行う画面です。登録済みの生徒さん一覧も見やすく表示され、必要に応じてQRコードの生成も簡単に行えます。保護者の方の連絡先なども含めて、包括的に管理できるようになっています。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <img src="portfolio_data/images/qr_attendance/generate_reports.png" alt="月次レポート生成画面" />
+                                <div class="image-caption">月次レポート生成画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>出席データ分析</h4>
+                                <p>毎月の出席率や生徒さんの通学パターンを詳しく分析し、Excel形式で見やすいレポートを自動生成いたします。お好きな年月を指定していただければ、複数月分のデータも一括で生成できるため、学期末の評価や保護者面談の際にも大変便利にお使いいただけます。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <img src="portfolio_data/images/qr_attendance/registered_rist.png" alt="登録済み生徒詳細リスト" />
+                                <div class="image-caption">登録済み生徒詳細リスト</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>生徒データベース管理</h4>
+                                <p>ご登録いただいているすべての生徒さんの詳細情報を、分かりやすい一覧形式で確認できる画面です。お名前や学年はもちろん、保護者の方のご連絡先や通学されている学校の情報なども一括で管理できるため、何かご連絡が必要な際にもスムーズに対応することができます。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <img src="portfolio_data/images/qr_attendance/generated_reports.png" alt="個人別出席レポート" />
+                                <div class="image-caption">個人別出席レポート</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>詳細レポート表示</h4>
+                                <p>こちらは生徒さんお一人お一人の詳細な出席レポートになります。単純な出席時間だけでなく、その日の気分や睡眠の状況、何を目的として来校されたかといった情報も含めて、総合的に分析しています。生徒さんの学習状況や生活リズムを把握するのに大変役立つ資料となっています。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <img src="portfolio_data/images/qr_attendance/Questionscreen_Q2_sleepsatisfaction.png" alt="睡眠満足度アンケート画面" />
+                                <div class="image-caption">睡眠満足度アンケート画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>ウェルネス調査機能</h4>
+                                <p>生徒さんの体調管理をサポートするため、睡眠の満足度を楽しく答えていただけるアンケート機能を用意しました。ビーカーの水位で満足度を表現する視覚的なデザインにより、小さなお子さんでも直感的に回答できます。毎日の健康状態を把握することで、より良い学習環境を提供できるよう心がけています。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <img src="portfolio_data/images/qr_attendance/Questionscreen_Q3_porpose.png" alt="来校目的アンケート画面" />
+                                <div class="image-caption">来校目的アンケート画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>来校目的調査機能</h4>
+                                <p>生徒さんが今日は何をしに来てくださったのかを、分かりやすいイラストで選んでいただくアンケート機能です。勉強、お友達との交流、リフレッシュなど、様々な目的を可愛らしいイラストで表現しているため、文字が読めない小さなお子さんでも楽しく回答できます。生徒さんの学習意欲や参加動機を理解することで、一人ひとりに合ったサポートを提供できるよう活用しています。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- プロジェクト2: シフトスケジューラー -->
+    <section class="project-section" data-project="shift_scheduler">
+        <div class="container">
+            <div class="project-content">
+                <div class="project-header reverse">
+                    <div class="project-info">
+                        <h2>Google Calendar連携シフト自動計算システム</h2>
+                        <div class="project-tags">
+                            <div class="tag">Flask</div>
+                            <div class="tag">Google Calendar API</div>
+                            <div class="tag">OAuth 2.0</div>
+                            <div class="tag">SQLite</div>
+                            <div class="tag">JavaScript</div>
+                        </div>
+                        <div class="project-description">
+                            FlaskベースのWebアプリケーションとして開発。
+                            Google Calendar APIとOAuth 2.0認証を活用し、セキュアなデータアクセスを実現。
+                            SQLiteでのデータ管理とCSV出力機能で実用性を向上させました。
+                        </div>
+                        <div class="impact-metrics">
+                            <h3>📈 技術的成果</h3>
+                            <ul class="metrics-list">
+                                <li><strong>Google API連携による外部データ活用</strong></li>
+                                <li>OAuth 2.0認証でセキュアなアクセス実現</li>
+                                <li>CSV出力・印刷機能で実用性向上</li>
+                                <li>複数月対応のカレンダー生成機能</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-image-container">
+                        <div class="main-image">
+                            <img src="portfolio_data/images/shift_scheduler/calendar_of_schedule.png" alt="Google Calendar連携シフトスケジューラー - カレンダー表示画面" />
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-images-container">
+                    <div class="sub-images">
+                        <div class="image-row">
+                            <div class="image-item">
+                                <img src="portfolio_data/images/shift_scheduler/mainscreen.png" alt="シフトスケジューラー メイン画面" />
+                                <div class="image-caption">メイン画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>アプリケーション メイン画面</h4>
+                                <p>Google Calendar連携シフト自動計算システムのメイン画面です。直感的なインターフェースでシフト管理の全機能にアクセスできます。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <img src="portfolio_data/images/shift_scheduler/setting_form.png" alt="シフト設定フォーム画面" />
+                                <div class="image-caption">シフト設定フォーム画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>詳細シフト設定機能</h4>
+                                <p>勤務時間、最低勤務時間、移動時間などの詳細な条件を設定するフォーム画面です。個人の働き方に合わせたカスタマイズが可能です。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <img src="portfolio_data/images/shift_scheduler/account_certification.png" alt="アカウント認証画面" />
+                                <div class="image-caption">アカウント認証画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>Google OAuth認証機能</h4>
+                                <p>セキュアなOAuth 2.0認証によってGoogleアカウントと安全に連携します。個人のカレンダーデータに対する適切なアクセス許可を管理できます。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <img src="portfolio_data/images/shift_scheduler/list_of_schedule.png" alt="スケジュール一覧画面" />
+                                <div class="image-caption">スケジュール一覧画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>スケジュール管理機能</h4>
+                                <p>Google Calendarから取得したスケジュール情報を整理して表示します。既存の予定を考慮した効率的なシフト計画が立てられます。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <img src="C:\Users\tatsu\2025年エンジニア転職\250724 面談用\portfolio_data\images\shift_scheduler\list_of_schedule_off_setting.png"
+                                 alt="スクリーン設定一覧画面" />
+                                <div class="image-caption">シフト計算結果画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>シフト計算結果とスケジュール調整機能</h4>
+                                <p>計算されたシフトの統計情報（勤務可能日数、総勤務時間、平均勤務時間）を表示し、各日のスケジュールをON/OFF機能で個別に調整できます。柔軟なシフト管理を実現します。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <img src="portfolio_data/images/shift_scheduler/calendar_of_schedule_off_setting.png" alt="カレンダー詳細設定画面" />
+                                <div class="image-caption">カレンダー詳細設定画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>カレンダー表示設定機能</h4>
+                                <p>カレンダーの表示形式や色分け設定など、視覚的な表現を細かく調整できる詳細設定画面です。見やすさと使いやすさを追求できます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- プロジェクト3: ポートフォリオサイト -->
+    <section class="project-section" data-project="portfolio_site">
+        <div class="container">
+            <div class="project-content">
+                <div class="project-header">
+                    <div class="main-image-container">
+                        <div class="main-image">
+                            <div class="main-placeholder">
+                                🌐 AI駆動開発ポートフォリオサイト<br>
+                                メイン画面<br>
+                                (レスポンシブデザイン)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h2>AI駆動開発の実証サイト</h2>
+                        <div class="project-tags">
+                            <div class="tag">HTML5</div>
+                            <div class="tag">CSS3</div>
+                            <div class="tag">JavaScript</div>
+                            <div class="tag">GitHub Actions</div>
+                        </div>
+                        <div class="project-description">
+                            モダンなHTML5/CSS3/JavaScriptで構築。
+                            GitHub ActionsによるCI/CDパイプラインを設定し、継続的デプロイメントを実現。
+                            GitHub Pagesでの静的サイトホスティングを活用しました。
+                        </div>
+                        <div class="impact-metrics">
+                            <h3>📈 技術的成果</h3>
+                            <ul class="metrics-list">
+                                <li><strong>Web開発未経験→3日間でデプロイ</strong></li>
+                                <li>AI駆動開発プロセスの実証</li>
+                                <li>継続的デプロイメント(CI/CD)構築</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-images-container">
+                    <div class="sub-images">
+                        <div class="image-row">
+                            <div class="image-item">
+                                <div class="image-placeholder">
+                                    🏠<br>ランディング<br>ページ
+                                </div>
+                                <div class="image-caption">トップページ・ヒーローセクション</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>ランディングページ</h4>
+                                <p>魅力的なヒーローセクションとスムーズなアニメーションで訪問者の興味を引くトップページです。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <div class="image-placeholder">
+                                    💼<br>プロジェクト<br>紹介画面
+                                </div>
+                                <div class="image-caption">プロジェクト一覧画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>プロジェクト紹介</h4>
+                                <p>開発したアプリケーションを視覚的に紹介し、技術スタックや成果を効果的にアピールする画面です。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <div class="image-placeholder">
+                                    🛠️<br>技術スタック<br>表示画面
+                                </div>
+                                <div class="image-caption">スキル・技術表示画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>技術スキル表示</h4>
+                                <p>プログレスバーと視覚的なデザインで技術スキルレベルを分かりやすく表現した画面です。</p>
+                            </div>
+                        </div>
+                        <div class="image-row">
+                            <div class="image-item">
+                                <div class="image-placeholder">
+                                    📱<br>モバイル<br>表示画面
+                                </div>
+                                <div class="image-caption">レスポンシブ対応画面</div>
+                            </div>
+                            <div class="image-description">
+                                <h4>レスポンシブデザイン</h4>
+                                <p>PC・タブレット・スマートフォンなど、あらゆるデバイスで最適に表示されるレスポンシブ対応です。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <h3>連絡先・リンク</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>メール連絡可能</span>
+                </div>
+                <div class="contact-item">
+                    <span>💻</span>
+                    <a href="https://github.com/tatsunoritojo" target="_blank">GitHub</a>
+                </div>
+                <div class="contact-item">
+                    <span>🌐</span>
+                    <a href="https://tatsunoritojo.github.io/portfolio/" target="_blank">詳細ポートフォリオ</a>
+                </div>
+            </div>
+            <p style="margin-top: 30px;">© 2025 東城立憲 - エンジニア転職ポートフォリオ</p>
+        </div>
+    </footer>
+
+    <script>
+        // ポートフォリオデータの動的読み込み
+        document.addEventListener('DOMContentLoaded', function() {
+            loadPortfolioData();
+            
+            // 印刷用の最適化
+            window.addEventListener('beforeprint', function() {
+                document.body.style.fontSize = '12pt';
+            });
+            
+            // リンクの処理
+            document.querySelectorAll('a[href^="#"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+
+        async function loadPortfolioData() {
+            try {
+                const response = await fetch('portfolio_data/config.json');
+                const data = await response.json();
+                updatePortfolioContent(data);
+            } catch (error) {
+                console.log('設定ファイルが見つかりません。デフォルト表示を使用します。');
+            }
+        }
+
+        function updatePortfolioContent(data) {
+            const projects = data.projects;
+            
+            // QRコード出席管理システム
+            updateProject('qr_attendance', projects.qr_attendance);
+            
+            // シフトスケジューラー
+            updateProject('shift_scheduler', projects.shift_scheduler);
+            
+            // ポートフォリオサイト
+            updateProject('portfolio_site', projects.portfolio_site);
+        }
+
+        function updateProject(projectId, projectData) {
+            const projectSection = document.querySelector(`[data-project="${projectId}"]`);
+            if (!projectSection || !projectData) return;
+
+            // メイン画像の更新
+            const mainPlaceholder = projectSection.querySelector('.main-placeholder');
+            if (mainPlaceholder && projectData.main_image) {
+                // 画像が存在するかチェック
+                checkImageExists(projectData.main_image).then(exists => {
+                    if (exists) {
+                        mainPlaceholder.style.backgroundImage = `url('portfolio_data/${projectData.main_image}')`;
+                        mainPlaceholder.style.backgroundSize = 'cover';
+                        mainPlaceholder.style.backgroundPosition = 'center';
+                        mainPlaceholder.innerHTML = '';
+                    }
+                });
+            }
+
+            // サブ画像の更新
+            const imageRows = projectSection.querySelectorAll('.image-row');
+            projectData.sub_images.forEach((imageData, index) => {
+                if (imageRows[index]) {
+                    const imageItem = imageRows[index].querySelector('.image-placeholder');
+                    const titleElement = imageRows[index].querySelector('.image-description h4');
+                    const descElement = imageRows[index].querySelector('.image-description p');
+
+                    // 画像の更新
+                    if (imageItem && imageData.image) {
+                        checkImageExists(imageData.image).then(exists => {
+                            if (exists) {
+                                imageItem.style.backgroundImage = `url('portfolio_data/${imageData.image}')`;
+                                imageItem.style.backgroundSize = 'cover';
+                                imageItem.style.backgroundPosition = 'center';
+                                imageItem.innerHTML = '';
+                            }
+                        });
+                    }
+
+                    // テキストの更新
+                    if (titleElement) titleElement.textContent = imageData.title;
+                    if (descElement) descElement.textContent = imageData.description;
+                }
+            });
+        }
+
+        function checkImageExists(imagePath) {
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.onload = () => resolve(true);
+                img.onerror = () => resolve(false);
+                img.src = `portfolio_data/${imagePath}`;
+            });
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# このフォルダにシフトスケジューラーの画像を配置してください
+
+## 必要な画像ファイル:
+- main.jpg (メイン画像)
+- oauth.jpg (OAuth認証画面)
+- calendar_fetch.jpg (カレンダーデータ取得画面)
+- shift_settings.jpg (シフト設定画面)
+- calculation_result.jpg (計算結果画面)
+- csv_export.jpg (CSV出力画面)
+
+推奨サイズ:
+- メイン画像: 幅制限なし × 300px高さ
+- 機能画像: 200px × 112px (16:9比率)

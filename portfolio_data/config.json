@@ -1,0 +1,99 @@
+{
+  "projects": {
+    "qr_attendance": {
+      "title": "QRコード出席管理システム",
+      "main_image": "images/qr_attendance/main.jpg",
+      "sub_images": [
+        {
+          "image": "images/qr_attendance/qr_scan.jpg",
+          "title": "QRコード読み取り機能",
+          "description": "生徒がQRコードをスキャンして出席登録を行う画面です。タッチディスプレイ対応で直感的な操作が可能です。"
+        },
+        {
+          "image": "images/qr_attendance/attendance_check.jpg",
+          "title": "出席状況確認",
+          "description": "リアルタイムで生徒の出席状況を確認できる画面です。Google Sheetsと連携してデータを即座に更新します。"
+        },
+        {
+          "image": "images/qr_attendance/student_register.jpg",
+          "title": "生徒情報管理",
+          "description": "新規生徒の登録や既存情報の編集を行う画面です。QRコード生成機能も統合されています。"
+        },
+        {
+          "image": "images/qr_attendance/monthly_report.jpg",
+          "title": "出席データ分析",
+          "description": "月次の出席率や傾向を分析し、PDF形式でレポートを自動生成する機能です。"
+        },
+        {
+          "image": "images/qr_attendance/admin_settings.jpg",
+          "title": "システム設定管理",
+          "description": "システム全体の設定変更や権限管理を行う管理者専用画面です。"
+        },
+        {
+          "image": "images/qr_attendance/dashboard.jpg",
+          "title": "総合監視画面",
+          "description": "システム全体の稼働状況や利用統計を一覧できる総合ダッシュボードです。"
+        }
+      ]
+    },
+    "shift_scheduler": {
+      "title": "Google Calendar連携シフト自動計算システム",
+      "main_image": "images/shift_scheduler/main.jpg",
+      "problem_solved": "出勤者の予定調整は経営者にとって非常に大きな負担となります。また、出勤者にとっても、特に学生などは手書きでのシフト提出が多く、デジタル化が進んでいません。そこで、Googleカレンダーの予定を読み込み、自動で営業時間や最低労働時間、移動時間などの条件をもとに、自動でシフト提出用の表を作成するようにしました。これにより、予定管理をGoogleカレンダーで一元化できるだけでなく、どこからいつでも見やすいシフト希望表を提出することができます。",
+      "future_plans": "今後、導入した事業者用メニューとして、アルバイトの提出した時間帯を自動でシフト表に反映し、クリック操作のみでシフトを作成できるようにします。その際、あらゆる勤務条件に合わせて柔軟に条件を変更することができるようにしたり、1日の人員数、人件費、繁忙時間帯、メンバーの累計勤務時間、スキル習得度合いなど、機能をリッチ化していきます。また、フィードバック機能を実装し、機械学習を導入することによって、機械学習が最適な人員を選別できるような機能も搭載できる可能性があります。",
+      "sub_images": [
+        {
+          "image": "images/shift_scheduler/oauth.jpg",
+          "title": "Google OAuth認証",
+          "description": "セキュアなOAuth 2.0認証でGoogleアカウントと連携し、カレンダーデータへの安全なアクセスを実現します。"
+        },
+        {
+          "image": "images/shift_scheduler/calendar_fetch.jpg",
+          "title": "カレンダーデータ取得",
+          "description": "Google Calendar APIを使用してリアルタイムでイベント情報を取得し、既存の予定を自動解析します。"
+        },
+        {
+          "image": "images/shift_scheduler/shift_settings.jpg",
+          "title": "シフト条件設定",
+          "description": "業務時間、最小勤務時間、移動時間、除外日などの詳細な条件を設定できるカスタマイズ画面です。"
+        },
+        {
+          "image": "images/shift_scheduler/calculation_result.jpg",
+          "title": "インテリジェント計算",
+          "description": "設定条件とカレンダー情報を基に、最適な勤務可能時間を自動計算し、視覚的に表示します。"
+        },
+        {
+          "image": "images/shift_scheduler/csv_export.jpg",
+          "title": "データ出力機能",
+          "description": "計算結果をCSV形式でエクスポートし、印刷用レイアウトでの出力も可能な実用的な機能です。"
+        }
+      ]
+    },
+    "portfolio_site": {
+      "title": "AI駆動開発の実証サイト",
+      "main_image": "images/portfolio_site/main.jpg",
+      "sub_images": [
+        {
+          "image": "images/portfolio_site/landing.jpg",
+          "title": "ランディングページ",
+          "description": "魅力的なヒーローセクションとスムーズなアニメーションで訪問者の興味を引くトップページです。"
+        },
+        {
+          "image": "images/portfolio_site/projects.jpg",
+          "title": "プロジェクト紹介",
+          "description": "開発したアプリケーションを視覚的に紹介し、技術スタックや成果を効果的にアピールする画面です。"
+        },
+        {
+          "image": "images/portfolio_site/skills.jpg",
+          "title": "技術スキル表示",
+          "description": "プログレスバーと視覚的なデザインで技術スキルレベルを分かりやすく表現した画面です。"
+        },
+        {
+          "image": "images/portfolio_site/mobile.jpg",
+          "title": "レスポンシブデザイン",
+          "description": "PC・タブレット・スマートフォンなど、あらゆるデバイスで最適に表示されるレスポンシブ対応です。"
+        }
+      ]
+    }
+  }
+}

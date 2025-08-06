@@ -1,0 +1,14 @@
+# このフォルダにQRコード出席管理システムの画像を配置してください
+
+## 必要な画像ファイル:
+- main.jpg (メイン画像)
+- qr_scan.jpg (QRコード読み取り画面)
+- attendance_check.jpg (出席確認画面)
+- student_register.jpg (生徒登録画面)
+- monthly_report.jpg (月次レポート画面)
+- admin_settings.jpg (管理者設定画面)
+- dashboard.jpg (ダッシュボード画面)
+
+推奨サイズ:
+- メイン画像: 幅制限なし × 300px高さ
+- 機能画像: 200px × 112px (16:9比率)
