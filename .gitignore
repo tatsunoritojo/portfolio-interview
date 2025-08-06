@@ -43,3 +43,8 @@ shift-scheduler-app/
 
 # Cache
 .cache/
+
+# Gemini CLI specific
+.claude/
+skill_sheet.html
+portfolio_simple_with_portfoliosite.html
