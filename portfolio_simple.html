@@ -567,6 +567,48 @@
         .history-table tbody tr:hover {
             background-color: #e2e6ea;
         }
+
+        /* アプリケーション概要セクション */
+        .app-summary-section {
+            padding: 25px 0;
+            background: white;
+            margin-bottom: 25px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+        }
+
+        .app-summary-section h2 {
+            text-align: center;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .app-summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        .app-summary-table th, .app-summary-table td {
+            border: 1px solid #dee2e6;
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .app-summary-table thead {
+            background-color: #e9ecef;
+        }
+
+        .app-summary-table th {
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .app-summary-table tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
     </style>
 </head>
 <body>
@@ -629,6 +671,39 @@
                     <tr>
                         <td>2025年4月～現在</td>
                         <td>広島大学特別支援教育特別専攻科</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- アプリケーション概要セクション -->
+    <section class="app-summary-section">
+        <div class="container">
+            <h2>アプリケーション概要</h2>
+            <table class="app-summary-table">
+                <thead>
+                    <tr>
+                        <th>項目</th>
+                        <th>出席管理</th>
+                        <th>シフト申請アプリ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>提供先</b></td>
+                        <td>個別対話型レポート塾Onedrop</td>
+                        <td>個人開発</td>
+                    </tr>
+                    <tr>
+                        <td><b>開発期間</b></td>
+                        <td>2025年5月～7月22日納品～現在も運用、保守を行う</td>
+                        <td>2025年7月15日～7月31日</td>
+                    </tr>
+                    <tr>
+                        <td><b>今後の実装機能</b></td>
+                        <td>生徒の出席情報をもとに，危険な状態の子どもを検出するAIを開発・通知<br>請求書，領収書作成機能の実装<br>応答性向上など</td>
+                        <td>管理者側のシステムを構築し，シフト組を自動化，簡便化</td>
                     </tr>
                 </tbody>
             </table>
