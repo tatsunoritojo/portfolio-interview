@@ -523,6 +523,50 @@
                 height: 120px;
             }
         }
+
+        /* 経歴セクション */
+        .history-section {
+            padding: 25px 0;
+            background: #f8f9fa;
+            margin-bottom: 25px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+        }
+
+        .history-section h2 {
+            text-align: center;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        .history-table th, .history-table td {
+            border: 1px solid #dee2e6;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        .history-table thead {
+            background-color: #e9ecef;
+        }
+
+        .history-table th {
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .history-table tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .history-table tbody tr:hover {
+            background-color: #e2e6ea;
+        }
     </style>
 </head>
 <body>
@@ -555,6 +599,39 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- 経歴セクション -->
+    <section class="history-section">
+        <div class="container">
+            <h2>経歴</h2>
+            <table class="history-table">
+                <thead>
+                    <tr>
+                        <th>期間</th>
+                        <th>内容</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2016年4月～2020年3月</td>
+                        <td>広島大学教育学部初等教育教員養成コース</td>
+                    </tr>
+                    <tr>
+                        <td>2020年4月～2022年3月</td>
+                        <td>広島大学大学院教育科学専攻</td>
+                    </tr>
+                    <tr>
+                        <td>2022年4月～2025年3月</td>
+                        <td>NPO法人あいびぃ/株式会社IVY</td>
+                    </tr>
+                    <tr>
+                        <td>2025年4月～現在</td>
+                        <td>広島大学特別支援教育特別専攻科</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
