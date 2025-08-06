@@ -1,0 +1,45 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Office temporary files
+*.docx#
+*.xlsx#
+
+# Personal documents (excluding from public repo)
+*.pdf
+*.docx
+*.xlsx
+rirekisho*.xlsx
+career_*.docx
+career_*.htm
+career_*.files/
+250723*.pdf
+250723*.html
+職務経歴書*.pdf
+modification/
+shift-scheduler-app/
+
+# Logs
+*.log
+
+# Cache
+.cache/
